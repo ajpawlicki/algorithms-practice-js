@@ -26,7 +26,7 @@ Nested.prototype.next = function(array) {
   return itemReached;
 };
 
-const nestedArray = [[1,2],3,[],[[4],[5]],[]];
+const nestedArray = [[1,2],3,[],[[[[4]]],[5]],[]];
 
 const nested = new Nested();
 console.log(nested.next(nestedArray));
